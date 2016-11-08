@@ -1,5 +1,5 @@
 <?php $title = 'Home'; require('./partials/head.php'); ?>
-	<div class="sezione1">
+	<section class="section1">
 		<div class="logo">
 			Recycle in <b>Barletta</b>
 		</div>
@@ -8,8 +8,13 @@
 				<input required type="text" name="searchinput" placeholder="Inserisci qui il nome dell'oggetto che vuoi cercare" class="form-input">
 			</form>
 		</div>
-	</div>
-	<div class="sezione2">
+		<div class="descrizione">
+			Riciclare è importante, ma non sempre facile.<br>
+			Recycle in Barletta ti aiuta: non sai dove mettere qualcosa? Inserisci l’oggetto in questa pagina, noi ti diremo dove!
+
+		</div>
+	</section>
+	<section class="section2">
 		<img src="./assets/images/recycle.png" class="responsiveimage" style="margin-top:10%;">
-	</div>
+	</section>
 <?php require('./partials/tail.php'); ?>
