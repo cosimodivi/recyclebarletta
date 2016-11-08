@@ -8,7 +8,7 @@
 				<input required type="text" name="searchinput" placeholder="Inserisci qui il nome dell'oggetto che vuoi cercare" class="form-input">
 			</form>
 		</div>
-		<div class="descrizione">
+		<div class="description">
 			Riciclare è importante, ma non sempre facile.<br>
 			Recycle in Barletta ti aiuta: non sai dove mettere qualcosa? Inserisci l’oggetto in questa pagina, noi ti diremo dove!
 
