@@ -15,7 +15,7 @@
 	
 	<!-- (START) Twitter-Facebook Meta Tag -->
 	<meta property="og:title" content="Recycle in Barletta - <?php echo $title; ?>">
-	<!-- Logo futuro <meta property="og:image" content=""> -->
+	<meta property="og:image" content="/assets/images/recycle.png">
 	<meta property="og:description" content="Non sai dove buttare un oggetto? Noi rispondiamo ai tuoi dubbi sulla raccolta differenziata a Barletta!">
 	<meta property="og:type" content="website">
 	<meta name="twitter:card" content="summary">
@@ -24,7 +24,7 @@
 	<!-- Twitter-Facebook Meta Tag (END) -->
 	
 
-	<link rel="icon" type="image/png" href="images/ico.png" />
+	<link rel="icon" type="image/png" href="/assets/images/icon.png" />
 	<link rel="stylesheet" href="/assets/css/main.css">
 	<script type="text/javascript" src="/assets/js/app.js" async></script>
 	
