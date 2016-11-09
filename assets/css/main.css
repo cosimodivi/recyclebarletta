@@ -29,19 +29,33 @@ body {
 }
 
 .form-input {
-	display: block;
+	
 	margin: 0;
-	width: 100%;
+	font-family: sans-serif;
+	font-size: 18px;
+	appearance: none;
+	box-shadow: none;
+	border:0px;
+	height:40px;
+	transition: .3s all;
+	
+}
+.form-submit {
+	margin: 0;
+	width: 15%;
 	font-family: sans-serif;
 	font-size: 18px;
 	appearance: none;
 	box-shadow: none;
 	border:0px;
 	padding: 10px;
-	transition: box-shadow 0.3s, border 0.3s;
-	
+	background: #364d63;
+	color:#FFF;
+	transition: .3s all;
 }
-
+.form-submit:hover {
+	background: #4b6c8c;
+}
 .form-input:focus {
   box-shadow: 0 0 5px 1px #969696;
 }
@@ -51,8 +65,14 @@ body {
 }
 /* Cellulari e Tablet */
 @media only screen and (max-width : 991px) {
+	.form-submit {
+		width: 100%;
+	}
+	.form-input {
+		width: 100%;
+	}
 	.form {
-		margin: 70px 55px 70px 35px;
+		margin: 70px 55px 70px 55px;
 	}
 	.section1 {
 	width:100%;
@@ -64,15 +84,23 @@ body {
 	.section2 {
 		display:none;
 	}
+	.logo
+	{
+		text-align:center;
+	}
 }
 /* PC e Portatili */
 @media only screen  and (min-width : 992px) {
+	.form-input {
+		width: 80%;
+	}
 	.form {
 		margin: 80px 70px 70px 70px;
 	}
 	.logo
 	{
 		font-size: 30px;
+		margin-bottom:200px;
 	}
 	.section1 {
 		width:60%;
@@ -93,12 +121,16 @@ body {
 
 /* Schermi grandi */
 @media only screen  and (min-width : 1200px) {
+	.form-input {
+		width: 80%;
+	}
 	.form {
 		margin: 80px 70px 70px 70px;
 	}
 	.logo
 	{
 		font-size: 50px;
+		margin-bottom:200px;
 	}
 	.section1 {
 		width:60%;
