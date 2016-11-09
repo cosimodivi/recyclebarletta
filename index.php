@@ -1,11 +1,13 @@
 <?php $title = 'Home'; require('./partials/head.php'); ?>
 	<section class="section1">
 		<div class="logo">
+			<img src="./assets/images/recycle.png" class="responsiveimage" style="width:5%;">
 			Recycle in <b>Barletta</b>
 		</div>
 		<div class="form">
 			<form method="GET" action="result.php">
 				<input required type="text" name="searchinput" placeholder="Inserisci qui il nome dell'oggetto che vuoi cercare" class="form-input">
+				<input type="submit" name="submit" value="Cerca" class="form-submit">
 			</form>
 		</div>
 		<div class="description">
@@ -14,7 +16,5 @@
 
 		</div>
 	</section>
-	<section class="section2">
-		<img src="./assets/images/recycle.png" class="responsiveimage" style="margin-top:10%;">
-	</section>
+	<section class="section2" style="background: url('./assets/images/bg.jpg') no-repeat center center ; background-size: cover; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;"></section>
 <?php require('./partials/tail.php'); ?>
