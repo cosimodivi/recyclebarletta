@@ -1,4 +1,4 @@
-    <footer class="footer">
+    <footer>
         <p class="footerlinks">
             <a href="#" class="footerlink">Chi siamo</a> <a href="#" class="footerlink">Contatti</a>
         </p>
