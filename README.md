@@ -1,17 +1,12 @@
-# Recycle in <b>Barletta</b>
-
-<p>Recycle in Barletta is a project for Puglia SOS association</p>
+# Recycle in **Barletta**
+Recycle in Barletta is a project for Puglia SOS association
 
 ## How it works
-
-<p>When a user write an item in input, he gets an answer with where the item is recycled</p>
+When a user write an item in input, he gets an answer with where the item is recycled
 
 ## Future updates
-<ul>
-  <li>PHP and database integration</li>
-</ul>
+
+* PHP and database integration
 
 ##Contributors
-<p>This projects is made by Codinglab's participants (PugliaSOS project)</p>
-
-</p>
+This projects is made by Codinglab's participants (PugliaSOS project)
