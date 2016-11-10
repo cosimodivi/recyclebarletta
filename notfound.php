@@ -1,11 +1,11 @@
 <?php $title = 'Nessun risultato'; require('./partials/head.php'); ?>
 	<section class="section1">
 		<div class="logo">
-			<img src="./assets/images/recycle.png" class="responsiveimage" style="width:5%;">
+			<img src="./assets/images/recycle.png" class="responsiveimage logoimage">
 			Recycle in <b>Barletta</b>
 		</div>
 		<div class="content">
-			<p style="font-size:30px;text-align:center;">
+			<p class="mdtext">
 			  Non abbiamo ancora a disposizione una risposta, inserisci la tua email per inoltrarci la richiesta di aggiunta
 			</p>
 		</div>
@@ -16,7 +16,7 @@
 			</form>
 		</div>
 	</section>
-	<section class="section2" style="text-align:center;background:#e74c3c;">
-		<h1 style="margin-top:250px;font-size:50px;">NESSUN<br>RISULTATO</h1>
+	<section class="section2 notfound">
+		<h1 class="notfoundtitle">Nessun<br>risultato</h1>
 	</section>
 <?php require('./partials/tail.php'); ?>
