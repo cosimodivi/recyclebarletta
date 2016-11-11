@@ -5,8 +5,8 @@
 			Recycle in <b>Barletta</b>
 		</div>
 		<div class="form">
-			<form method="GET" action="result.php">
-				<input required type="text" name="searchinput" placeholder="Inserisci qui il nome dell'oggetto che vuoi cercare" class="form-input form-search">
+			<form name="searchform" method="GET" action="result.php" onsubmit="return validateForm()">
+				<input type="text" name="searchinput" id="searchinput" placeholder="Inserisci qui il nome dell'oggetto che vuoi cercare" class="form-input form-search">
 				<input type="submit" value="Cerca" name="submit" class="form-submit">
 			</form>
 		</div>
