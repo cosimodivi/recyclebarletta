@@ -15,6 +15,6 @@
 		</div>
 	</section>
 	<section class="section2 centertext">
-		<img src="./assets/images/bin-glass.png" class="responsiveimage binsimage">
+		<img src="./assets/images/bin-glass.png" class="responsiveimage sectionimage">
 	</section>
 <?php require('./partials/tail.php'); ?>
