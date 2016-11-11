@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 /* Default */
 html,body {
@@ -90,6 +90,9 @@ p {
 	background:#364d63;
 	color:#FFF;
 	
+}
+.form-input.error {
+	border: 1px solid red;
 }
 .form-search {
 	background: #364d63 url('/assets/images/search-icon.png') no-repeat scroll 7px 7px;
