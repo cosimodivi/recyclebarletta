@@ -11,7 +11,7 @@
 		</div>
 		<div class="form">
 			<form method="GET" action="result.php">
-				<input required type="email" name="searchinput" placeholder="Inserisci la tua email" class="form-input">
+				<input type="email" name="searchinput" placeholder="Inserisci la tua email" class="form-input">
 				<input type="submit" name="submit" value="Invia" class="form-submit">
 			</form>
 		</div>
