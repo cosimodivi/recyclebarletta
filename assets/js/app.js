@@ -1,11 +1,8 @@
-(function() {
-  'use strict';
-
-  // Example code
-  var not = document.getElementById('js-not')
-  if (not) {
-    not.remove();
-  }
-  ///////////////
-
-})();
+function validateForm() {
+    var x = document.forms["searchform"]["searchinput"].value;
+    if (x == null || x == "") {
+        var d = document.getElementById("searchinput");
+        d.className += " error";
+        return false;
+    }
+}
