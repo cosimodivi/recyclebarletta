@@ -1,20 +1,23 @@
 <?php $title = 'Result'; require('./partials/head.php'); ?>
-	<section class="section1">
-		<div class="logo">
-			<img src="./assets/images/recycle.png" class="responsiveimage logoimage">
-			Recycle in <b>Barletta</b>
-		</div>
-		<div class="content">
-			<p class="mdtext centertext">
-			  Devi riciclare <b><?php echo($_GET['searchinput']); ?></b><br>come: <b>Vetro</b>
-			</p>
-		</div>
-		<div class="description centertext">
-			Speriamo di averti aiutato. Clicca il pulsante Indietro per effettuare un'altra ricerca<br><br>
-			<a href="index.php" class="button flatwhite" >Indietro</a>
-		</div>
-	</section>
-	<section class="section2 centertext">
-		<img src="./assets/images/bin-glass.png" class="responsiveimage sectionimage">
-	</section>
+
+<div class="response-page plastic">
+  <div class="navbar">
+    <?php require('./partials/header.php'); ?>
+    <form action="/result.php" method="get" class="search-bar">
+      <input type="text" name="object" placeholder="Ricicla ora..">
+      <input type="image" src="/assets/images/action-icon.svg" alt="Ricicla">
+    </form>
+  </div>
+
+  <div id="response" class="lets-move pop-up-2s">
+    <figure>
+      <img src="/assets/images/bin-plastic.png" alt="Ricicla come plastica">
+    </figure>
+    <article>
+      <h4>Ricicla come</h4>
+      <h2>PLASTICA</h2>
+    </article>
+  </div>
+</div>
+
 <?php require('./partials/tail.php'); ?>
