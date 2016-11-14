@@ -24,9 +24,10 @@
       <p>Riciclare non è mai stato così facile..</p>
     </article>
     <form action="/result.php" method="get" class="search-bar">
-      <input type="text" name="object" placeholder="Ricicla ora">
+      <input id="inputsearch" type="text" name="object" placeholder="Ricicla ora" autocomplete="off">
       <input type="image" src="/assets/images/action-icon.svg" alt="Ricicla">
     </form>
+	 <div id="results" class="results"></div>
   </div>
 </div>
 
