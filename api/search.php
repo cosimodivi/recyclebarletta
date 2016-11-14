@@ -1,5 +1,4 @@
 <?php
-
 const BIN_PLASTIC = 1;
 const BIN_PAPER = 2;
 const BIN_GLASS = 3;
@@ -19,16 +18,12 @@ $items = [
 	'birra in lattina' => BIN_PLASTIC
 ];
 
-$i = 0;
+
 foreach($items as $key => $v)
 {
-	if($_GET['s'] != '') {
-		if (strpos($key, $_GET['s']) !== false) {
-			echo '<li>'.$key.'</li>';
-			$i++;
-		}
+	if (strpos($key, $_GET['s']) !== false) {
+		$result[] = array('name' => $key, 'value' => $v);
 	}
 }
 
-if($i == 0)
-echo '<li>Nessun risultato</li>';
+echo json_encode($result);
