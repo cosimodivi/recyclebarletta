@@ -1,21 +1,21 @@
 $( document ).ready(function() {
-   $("#results").hide();
+    $("#results").hide();
 });
 $('#inputsearch').keyup(function() {
-	
 	var input = this.value;
-	if(input == '') 
-		$("#results").hide();
-	 else  
-		 $("#results").show();
-	 
+
+	$("#results").show();
+	$("#results").html("");
 	$.ajax({
 		type: "GET",
+		dataType: "json",
 		url: "/api/search.php",
 		data: "s=" + input,
 		success: function(data)
 		{
-		   $("#results").html(data);
-		}
+			$.each(data, function(i) { 
+				$("#results").append("<li>" + data[i].name + "</li>");
+			});
+		}	
 	});
 });
