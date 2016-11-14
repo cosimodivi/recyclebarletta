@@ -851,6 +851,7 @@ body {
 	margin-top:2px;
 	color:#777;
 	padding:5px;
+	overflow-y:scroll;
 }
 .results li{
 	list-style-type:none;
