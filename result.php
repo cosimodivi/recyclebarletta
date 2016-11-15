@@ -1,21 +1,41 @@
-<?php $title = 'Result'; require('./partials/head.php'); ?>
+<?php $title = 'Result'; require('./partials/head.php'); require('./api/items.php');
 
-<div class="response-page plastic">
+if(!isset($_GET['object'])) header("Location: index.php"); // Redirect to index if object is not written
+
+foreach($items as $key => $v)
+{ 
+	if ($key == strtolower($_GET['object'])) {
+		$bin = $v;
+	}	
+} 
+
+if(!isset($bin)) header("Location: email.php"); // If object doesn't exists, redirect to index
+
+
+	if($bin == BIN_PLASTIC) $type = 'plastic';
+elseif($bin == BIN_PAPER) $type = 'paper';
+elseif($bin == BIN_GLASS) $type = 'glass';
+elseif($bin == BIN_ORGANIC) $type = 'organic';
+elseif($bin == BIN_BATTERIES) $type = 'batteries';
+elseif($bin == BIN_REST) $type = 'rest';
+ ?>
+
+<div class="response-page <?=$type;?>">
   <div class="navbar">
     <?php require('./partials/header.php'); ?>
     <form action="/result.php" method="get" class="search-bar">
-      <input type="text" name="object" placeholder="Ricicla ora..">
-      <input type="image" src="/assets/images/action-icon.svg" alt="Ricicla">
+		<input id="inputsearch" type="text" name="object" placeholder="Ricicla ora" autocomplete="off">
+		<input type="image" src="/assets/images/action-icon.svg" alt="Ricicla">
     </form>
   </div>
-
   <div id="response" class="lets-move pop-up-2s">
     <figure>
-      <img src="/assets/images/bin-plastic.png" alt="Ricicla come plastica">
+		<img src="/assets/images/bin-<?=$type;?>.png" alt="Ricicla come plastica">
     </figure>
     <article>
-      <h4>Ricicla come</h4>
-      <h2>PLASTICA</h2>
+		<h2><?php echo $_GET['object']; ?></h2>
+		<h4>Ricicla come</h4>
+		<h2><?=$binsname[$type]; ?></h2>
     </article>
   </div>
 </div>
