@@ -733,6 +733,22 @@ body {
     background-color: #28527b;
     color: #d7d7d7;
 }
+.response-page.glass {
+    background-color: #00782a;
+    color: #d7d7d7;
+}
+.response-page.organic {
+    background-color: #87552d;
+    color: #d7d7d7;
+}
+.response-page.batteries {
+    background-color: #7f2a2a;
+    color: #d7d7d7;
+}
+.response-page.rest {
+    background-color: #3e3e3e;
+    color: #d7d7d7;
+}
 .navbar {
     width: 100%;
     display: -webkit-flex;
@@ -791,8 +807,17 @@ body {
     -moz-align-self: center;
     align-self: center;
 }
+.navbar .results {
+	background:transparent;
+	color:#FFF;
+	float:right;
+}
 @media only screen and (max-width: 767px) {
     .navbar .search-bar {
+        width: 70%;
+        margin: 0 15%;
+    }
+	.navbar .results {
         width: 70%;
         margin: 0 15%;
     }
