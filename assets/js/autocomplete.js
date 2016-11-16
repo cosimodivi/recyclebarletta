@@ -1,5 +1,8 @@
 $( document ).ready(function() {
     $("#results").hide();
+	$("#results").on('click','li',function (){
+	    $("#inputsearch").val($(this).text());
+	});
 });
 $('#inputsearch').keyup(function() {
 	var input = this.value;
@@ -19,8 +22,9 @@ $('#inputsearch').keyup(function() {
 		{
 				$("#results").html("");
 				$.each(data, function(i) { 
-					$("#results").append("<li>" + data[i].name + "</li>");
+					$("#results").append("<li >" + data[i].name + "</li>");
 				});
 		}	
 	});
 });
+
