@@ -1,10 +1,10 @@
 <?php
-const BIN_PLASTIC = 1;
-const BIN_PAPER = 2;
-const BIN_GLASS = 3;
-const BIN_ORGANIC = 4;
-const BIN_BATTERIES = 6;
-const BIN_REST = 7;
+const BIN_PLASTIC = 'plastic';
+const BIN_PAPER = 'paper';
+const BIN_GLASS = 'glass';
+const BIN_ORGANIC = 'organic';
+const BIN_BATTERIES = 'batteries';
+const BIN_REST = 'rest';
 
 $binsname = array(
 		'plastic' => 'plastica',
