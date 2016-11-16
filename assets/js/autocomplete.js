@@ -3,9 +3,13 @@ $( document ).ready(function() {
 });
 $('#inputsearch').keyup(function() {
 	var input = this.value;
+	if(input == "") {
+		$("#results").hide();
+	}
+	else {
+		$("#results").show();
+	}
 
-	$("#results").show();
-	$("#results").html("");
 	$.ajax({
 		type: "GET",
 		dataType: "json",
@@ -13,9 +17,10 @@ $('#inputsearch').keyup(function() {
 		data: "s=" + input,
 		success: function(data)
 		{
-			$.each(data, function(i) { 
-				$("#results").append("<li>" + data[i].name + "</li>");
-			});
+				$("#results").html("");
+				$.each(data, function(i) { 
+					$("#results").append("<li>" + data[i].name + "</li>");
+				});
 		}	
 	});
 });
