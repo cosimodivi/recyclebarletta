@@ -1,6 +1,6 @@
 <?php $title = 'Result'; require('./partials/head.php'); require('./api/items.php');
 
-if(!isset($_GET['object'])) header("Location: index.php"); // Redirect to index if object is not written
+if(!isset($_GET['object'])) { header("Location: index.php"); } // Redirect to index if object is not written
 
 foreach($items as $key => $v)
 { 
@@ -9,15 +9,9 @@ foreach($items as $key => $v)
 	}	
 } 
 
-if(!isset($bin)) header("Location: email.php"); // If object doesn't exists, redirect to index
+if(!isset($bin)) { header("Location: email.php"); } // If object doesn't exists, redirect to index
 
-
-	if($bin == BIN_PLASTIC) $type = 'plastic';
-elseif($bin == BIN_PAPER) $type = 'paper';
-elseif($bin == BIN_GLASS) $type = 'glass';
-elseif($bin == BIN_ORGANIC) $type = 'organic';
-elseif($bin == BIN_BATTERIES) $type = 'batteries';
-elseif($bin == BIN_REST) $type = 'rest';
+$type=$bin;
  ?>
 
 <div class="response-page <?=$type;?>">
